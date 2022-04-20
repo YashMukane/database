@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    return sequelize.define("Donar", {
+    return sequelize.define("donor", {
       mobileno: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -16,9 +16,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-
-      
-
+      userlocation: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
 
     }, {
         timestamps: false,
